@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.gift-box {
+    font-size: 100px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.hover-image {
+    width: 100px;
+    height: 100px;
+    background-image: url('assets/ARU.jpg'); /* Đường dẫn ảnh mở */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    display: none; /* Ẩn ảnh mở hộp quà ban đầu */
+    transform: scale(8)
+}
+
+#birthdayForm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#birthdayForm input {
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#birthdayForm button {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}

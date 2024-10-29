@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="gift-box" id="giftBox">
+            🎁
+        </div>
+        <div class="hover-image" id="hoverImage"></div>
+        
+        <!-- Form nhập ngày sinh, ẩn ban đầu -->
+        <form id="birthdayForm" style="display: none;">
+            <input type="text" id="birthdayInput" placeholder="Enter your birthday, sensei:">
+            <button type="submit">Xác nhận</button>
+        </form>
+    </div>
+
+    <!-- Thẻ audio để phát âm thanh -->
+    <audio id="birthdaySound" src="assets/fnaf-2-death-scream.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

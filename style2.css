@@ -1,0 +1,63 @@
+/* style2.css */
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('assets/background.jpg'); /* Đường dẫn ảnh nền */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Lưới 5 cột */
+    grid-template-rows: repeat(5, 1fr);    /* Lưới 5 hàng */
+    gap: 10px; /* Khoảng cách giữa các ảnh */
+    max-width: 60vw;
+    max-height: 60vh;
+    position: relative;
+}
+
+.birthday-image {
+    grid-column: 2 / 5; /* Vị trí của ảnh chính ở trung tâm */
+    grid-row: 2 / 5;
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.surrounding-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* style2.css */
+
+.sound-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.dont-click-button {
+    position: fixed;
+    bottom: 20px; /* Cố định ở góc phải dưới */
+    right: 20px;
+    background: red;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
